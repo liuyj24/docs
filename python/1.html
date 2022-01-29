@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python 入门必看！ | 阿菌的打工日记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docsimages/daju.ico">
+    <meta name="description" content="python教程,阿菌,大橘,打工,日记">
+    <meta name="author" content="阿菌,阿菌的打工日记">
+    <meta name="Keywords" content="python教程,docker教程,大橘,阿菌,打工,日记">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.151cdbc4.css" as="style"><link rel="preload" href="/docs/assets/js/app.de92ba7f.js" as="script"><link rel="preload" href="/docs/assets/js/2.b3ab0e85.js" as="script"><link rel="preload" href="/docs/assets/js/8.37ce8264.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.ec46dcc4.js"><link rel="prefetch" href="/docs/assets/js/11.e57e9944.js"><link rel="prefetch" href="/docs/assets/js/12.9ff08bf1.js"><link rel="prefetch" href="/docs/assets/js/3.c41f35f1.js"><link rel="prefetch" href="/docs/assets/js/4.bff542e8.js"><link rel="prefetch" href="/docs/assets/js/5.32dde0b2.js"><link rel="prefetch" href="/docs/assets/js/6.345e52dd.js"><link rel="prefetch" href="/docs/assets/js/7.9c80215f.js"><link rel="prefetch" href="/docs/assets/js/9.d19b25b4.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.151cdbc4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docsimages/daju.png" alt="阿菌的打工日记" class="logo"> <span class="site-name can-hide">阿菌的打工日记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/python/1.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Python
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/python/1.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Python
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>阿菌的打工日记</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Python 教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/python/1.html" aria-current="page" class="active sidebar-link">Python 入门必看！</a></li><li><a href="/docs/python/2.html" class="sidebar-link">Python 中的数字</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python-入门必看"><a href="#python-入门必看" class="header-anchor">#</a> Python 入门必看！</h1> <blockquote><p>本教程内容参考自官方文档，通过诙谐的方式讲解～ ஐ٩(๑´ᵕ`)۶ஐ:</p></blockquote> <h2 id="源文件的字符编码"><a href="#源文件的字符编码" class="header-anchor">#</a> 源文件的字符编码</h2> <p>python 源文件的默认编码是 UTF-8，如果我们的 python 文件不使用默认编码，则需要在文件的第一行用注释声明文件的编码格式：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># -*- coding: 火星体 -*-</span>
+</code></pre></div><h2 id="注释"><a href="#注释" class="header-anchor">#</a> 注释</h2> <p>既然上面提到了注释，在 python 中，可以用 # 声明注释</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment"># 下面会输出一句真理</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;看这个文档的一定是个大帅哥或大美女！&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><p>那除了用 # 进行注释外，我们还可以使用 ''' 或者 &quot;&quot;&quot; 注释代码，这两个通常用于写多行注释，比如在项目中说明某个工具的背景和具体用法：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token triple-quoted-string string">'''
+这是一个地图编辑工具，可用于编辑地图
+作者：大橘
+创作时间：2022 年 1 月 27 日
+'''</span>
+<span class="token keyword">class</span> <span class="token class-name">Tool</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+</code></pre></div><p>又或者说留下这样的东西：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+                   _ooOoo_
+                  o8888888o
+                  88&quot; . &quot;88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      .&quot;&quot; '&lt;  `.___\_&lt;|&gt;_/___.'  &gt;'&quot;&quot;.
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            佛祖保佑       永无BUG
+&quot;&quot;&quot;</span>
+<span class="token keyword">def</span> <span class="token function">calculate_salary</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+</code></pre></div><h2 id="代码换行"><a href="#代码换行" class="header-anchor">#</a> 代码换行</h2> <p>正常情况下，我们追求简洁的代码。但如果我们的某一行代码特别长，可以使用换行符反斜杠 <code>\</code> 进行换行，比如下面这行计算每月剩下多少钱的代码就非常长：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token triple-quoted-string string">&quot;&quot;&quot;
+salary 工资
+fang_dai 房贷
+che_dai 车贷
+wife_money 上缴给老婆的钱
+parent_money 赡养父母的钱
+children_money 养孩子的钱
+eat_money 吃喝的钱
+clothes_money 买衣服的钱
+......
+&quot;&quot;&quot;</span>
+my_money <span class="token operator">=</span> salary <span class="token operator">-</span> fang_dai <span class="token operator">-</span> che_dai <span class="token operator">-</span> wife_money <span class="token operator">-</span> parent_money <span class="token operator">-</span> children_money <span class="token operator">-</span> eat_money <span class="token operator">-</span> clothes_money
+</code></pre></div><p>这代码太长了阅读起来的体验就不是很好，于是可以用反斜杠划分一下：</p> <div class="language-python extra-class"><pre class="language-python"><code>my_money <span class="token operator">=</span> salary <span class="token operator">-</span> fang_dai <span class="token operator">-</span> che_dai <span class="token operator">-</span> wife_money <span class="token operator">-</span> parent_money <span class="token operator">-</span> children_money <span class="token operator">-</span> eat_money <span class="token operator">-</span> clothes_money
+</code></pre></div><h2 id="关于缩进"><a href="#关于缩进" class="header-anchor">#</a> 关于缩进</h2> <p>em...... 以前写 c 或者 java 的时候会用大括号 {} 划分代码块，但是 python 会简洁很多，直接用缩进进行划分，如果不符合缩进格式是会报错的：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">get_to_work</span><span class="token punctuation">(</span>is_cold_today<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> is_cold_today<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;不去上班&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;去上班&quot;</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2022年1月29日星期六 12:10</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/" class="prev router-link-active">
+        作者介绍
+      </a></span> <span class="next"><a href="/docs/python/2.html">
+        Python 中的数字
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.de92ba7f.js" defer></script><script src="/docs/assets/js/2.b3ab0e85.js" defer></script><script src="/docs/assets/js/8.37ce8264.js" defer></script>
+  </body>
+</html>
